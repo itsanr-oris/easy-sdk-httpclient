@@ -1,0 +1,39 @@
+{
+    "name": "f-oris/easy-sdk-httpclient",
+    "description": "Easy sdk http-client component.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "F.oris",
+            "email": "us@f-oris.me"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "pimple/pimple": "^3.3",
+        "f-oris/easy-httpclient": "^1.0"
+    },
+    "require-dev": {
+        "f-oris/easy-sdk-framework": "1.0",
+        "phpunit/phpunit": "^8.1",
+        "mockery/mockery": "^1.2",
+        "fzaninotto/faker": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Foris\\Easy\\Sdk\\HttpClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Foris\\Easy\\Sdk\\HttpClient\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "easy-sdk": {
+            "providers": [
+                "Foris\\Easy\\Sdk\\HttpClient\\ServiceProvider"
+            ]
+        }
+    }
+}
