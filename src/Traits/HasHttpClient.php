@@ -14,7 +14,6 @@ trait HasHttpClient
      * Get logger instance
      *
      * @return HttpClient
-     * @throws \Foris\Easy\Logger\Exception\InvalidConfigException
      */
     public function http()
     {
