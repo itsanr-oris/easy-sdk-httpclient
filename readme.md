@@ -12,7 +12,7 @@ Easy sdk HttpClient扩展组件包
 composer require f-oris/easy-sdk-httpclient
 ```
 
-Publish日志配置信息
+Publish配置信息
 
 ```bash
 php artisan vendor:publish --provider="Foris\Easy\Sdk\HttpClient\ServiceProvider"
