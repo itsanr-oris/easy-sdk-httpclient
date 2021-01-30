@@ -15,7 +15,7 @@ class GetHttpClientInstanceTest extends \Foris\Easy\Sdk\Develop\TestCase
     /**
      * Set up test environment.
      */
-    protected function setUp(): void
+    protected function setUp()
     {
         parent::setUp();
         $this->app()->registerProviders([ServiceProvider::class]);

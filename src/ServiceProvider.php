@@ -1,4 +1,4 @@
-<?php
+<?php /** @noinspection PhpUndefinedFieldInspection */
 
 namespace Foris\Easy\Sdk\HttpClient;
 
@@ -44,7 +44,8 @@ class ServiceProvider extends \Foris\Easy\Sdk\ServiceProvider
     protected function addLogMiddleware(ServiceContainer $app, HttpClient $client)
     {
         if (isset($app['logger'])) {
-            $client->pushMiddleware(new LogMiddleware($app['logger'], $app->config['http-client'] ?? []));
+            $config = isset($app->config['http-client']) ? $app->config['http-client'] : [];
+            $client->pushMiddleware(new LogMiddleware($app['logger'], $config));
         }
     }
 
@@ -56,6 +57,7 @@ class ServiceProvider extends \Foris\Easy\Sdk\ServiceProvider
      */
     protected function addRetryMiddleware(ServiceContainer $app, HttpClient $client)
     {
-        $client->pushMiddleware(new RetryMiddleware($app->config['http-client'] ?? []));
+        $config = isset($app->config['http-client']) ? $app->config['http-client'] : [];
+        $client->pushMiddleware(new RetryMiddleware($config));
     }
 }
