@@ -9,11 +9,11 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
-        "f-oris/easy-httpclient": "^1.0"
+        "php": ">=5.5",
+        "f-oris/easy-httpclient": "^0.5|^1.0"
     },
     "require-dev": {
-        "f-oris/easy-sdk-develop": "^1.0"
+        "f-oris/easy-sdk-develop": "^0.5|^1.0"
     },
     "autoload": {
         "psr-4": {
