@@ -10,10 +10,11 @@
     ],
     "require": {
         "php": ">=5.5",
-        "f-oris/easy-httpclient": "^0.5"
+        "psr/log": "^1.0",
+        "f-oris/easy-httpclient": "^2.0"
     },
     "require-dev": {
-        "f-oris/easy-sdk-develop": "^0.5"
+        "f-oris/easy-sdk-develop": "^2.0"
     },
     "autoload": {
         "psr-4": {
