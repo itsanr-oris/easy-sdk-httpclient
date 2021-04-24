@@ -5,7 +5,7 @@ return [
      * http request base uri.
      */
     'base_uri' => '',
-    
+
     /**
      * max retry times
      */
